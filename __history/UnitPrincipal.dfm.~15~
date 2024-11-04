@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 148
   Caption = 'Painel de Usu'#225'rios'
   ClientHeight = 441
-  ClientWidth = 520
+  ClientWidth = 654
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,16 +15,15 @@ object Form1: TForm1
   object GroupBox1: TGroupBox
     Left = 0
     Top = 0
-    Width = 520
+    Width = 654
     Height = 57
     Align = alTop
     Caption = 'Acesso'
     TabOrder = 0
-    ExplicitWidth = 654
     object txtUsuario: TEdit
       Left = 11
       Top = 23
-      Width = 126
+      Width = 198
       Height = 23
       ParentShowHint = False
       ShowHint = True
@@ -32,9 +31,9 @@ object Form1: TForm1
       TextHint = 'Usu'#225'rio'
     end
     object txtSenha: TEdit
-      Left = 143
+      Left = 215
       Top = 23
-      Width = 126
+      Width = 198
       Height = 23
       ParentShowHint = False
       PasswordChar = '*'
@@ -43,7 +42,7 @@ object Form1: TForm1
       TextHint = 'Senha'
     end
     object btnEntrar: TButton
-      Left = 275
+      Left = 419
       Top = 22
       Width = 72
       Height = 25
@@ -61,7 +60,7 @@ object Form1: TForm1
       OnClick = btnEntrarClick
     end
     object btnNovoAcesso: TButton
-      Left = 351
+      Left = 495
       Top = 22
       Width = 72
       Height = 25
@@ -79,7 +78,7 @@ object Form1: TForm1
       OnClick = btnNovoAcessoClick
     end
     object btnRecuperar: TButton
-      Left = 427
+      Left = 571
       Top = 22
       Width = 72
       Height = 25
@@ -97,7 +96,7 @@ object Form1: TForm1
       OnClick = btnRecuperarClick
     end
     object Edit1: TEdit
-      Left = 240
+      Left = 384
       Top = 23
       Width = 29
       Height = 23
@@ -109,7 +108,7 @@ object Form1: TForm1
   object Panel1: TPanel
     Left = 0
     Top = 57
-    Width = 520
+    Width = 654
     Height = 384
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
@@ -119,109 +118,10 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
-    ExplicitWidth = 601
-    object Panel4: TPanel
-      Left = 7
-      Top = 6
-      Width = 506
-      Height = 371
-      TabOrder = 2
-      Visible = False
-      object Label8: TLabel
-        Left = 14
-        Top = 56
-        Width = 34
-        Height = 15
-        Caption = 'E-Mail'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Label9: TLabel
-        Left = 14
-        Top = 18
-        Width = 475
-        Height = 15
-        Alignment = taCenter
-        Caption = 
-          'Caso o endere'#231'o de e-mail informado abaixo esteja associado a um' +
-          'a conta, os detalhes'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Label10: TLabel
-        Left = 14
-        Top = 31
-        Width = 342
-        Height = 15
-        Caption = 'para recupera'#231#227'o da conta ser'#225' enviado no correio eletr'#244'nico.'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Label11: TLabel
-        Left = 208
-        Top = 166
-        Width = 188
-        Height = 15
-        Caption = 'AINDA N'#195'O EST'#193' FUNCIONANDO'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Edit3: TEdit
-        Left = 14
-        Top = 71
-        Width = 400
-        Height = 23
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-        ParentShowHint = False
-        ShowHint = True
-        TabOrder = 0
-        Text = 'Edit3'
-        TextHint = '--@--.com'
-      end
-      object Button6: TButton
-        Left = 420
-        Top = 71
-        Width = 72
-        Height = 23
-        Hint = 'Enviar senha no e-mail'
-        Caption = 'Enviar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-        ParentShowHint = False
-        ShowHint = True
-        TabOrder = 1
-        OnClick = Button6Click
-      end
-    end
     object Panel3: TPanel
       Left = 7
       Top = 6
-      Width = 506
+      Width = 640
       Height = 371
       TabOrder = 1
       Visible = False
@@ -278,7 +178,7 @@ object Form1: TForm1
         ParentFont = False
       end
       object Label5: TLabel
-        Left = 257
+        Left = 324
         Top = 100
         Width = 34
         Height = 15
@@ -304,7 +204,7 @@ object Form1: TForm1
         ParentFont = False
       end
       object Label7: TLabel
-        Left = 275
+        Left = 340
         Top = 145
         Width = 146
         Height = 15
@@ -339,7 +239,7 @@ object Form1: TForm1
       object Edit4: TEdit
         Left = 134
         Top = 24
-        Width = 358
+        Width = 489
         Height = 23
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -356,7 +256,7 @@ object Form1: TForm1
       object Edit5: TEdit
         Left = 14
         Top = 71
-        Width = 478
+        Width = 609
         Height = 23
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -373,7 +273,7 @@ object Form1: TForm1
       object Edit6: TEdit
         Left = 14
         Top = 116
-        Width = 235
+        Width = 297
         Height = 23
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -388,9 +288,9 @@ object Form1: TForm1
         TextHint = '--'
       end
       object Edit7: TEdit
-        Left = 257
+        Left = 324
         Top = 116
-        Width = 235
+        Width = 299
         Height = 23
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -406,8 +306,8 @@ object Form1: TForm1
         TextHint = '*****'
       end
       object Button1: TButton
-        Left = 430
-        Top = 318
+        Left = 580
+        Top = 316
         Width = 45
         Height = 41
         Hint = 'Salvar/Inserir'
@@ -424,8 +324,8 @@ object Form1: TForm1
         OnClick = Button1Click
       end
       object Button2: TButton
-        Left = 379
-        Top = 318
+        Left = 529
+        Top = 316
         Width = 45
         Height = 41
         Hint = 'Excluir'
@@ -442,8 +342,8 @@ object Form1: TForm1
         OnClick = Button2Click
       end
       object Button3: TButton
-        Left = 328
-        Top = 318
+        Left = 478
+        Top = 316
         Width = 45
         Height = 41
         Hint = 'Limpar'
@@ -462,7 +362,7 @@ object Form1: TForm1
       object DBGrid2: TDBGrid
         Left = 14
         Top = 166
-        Width = 217
+        Width = 283
         Height = 139
         DataSource = DataSource2
         DrawingStyle = gdsGradient
@@ -481,9 +381,9 @@ object Form1: TForm1
         OnDblClick = DBGrid1DblClick
       end
       object DBGrid3: TDBGrid
-        Left = 275
+        Left = 340
         Top = 166
-        Width = 217
+        Width = 283
         Height = 139
         DataSource = DataSource3
         DrawingStyle = gdsGradient
@@ -502,7 +402,7 @@ object Form1: TForm1
         OnDblClick = DBGrid1DblClick
       end
       object Button4: TButton
-        Left = 237
+        Left = 303
         Top = 207
         Width = 31
         Height = 27
@@ -520,7 +420,7 @@ object Form1: TForm1
         OnClick = Button4Click
       end
       object Button5: TButton
-        Left = 237
+        Left = 303
         Top = 240
         Width = 31
         Height = 27
@@ -538,17 +438,115 @@ object Form1: TForm1
         OnClick = Button5Click
       end
     end
+    object Panel4: TPanel
+      Left = 7
+      Top = 6
+      Width = 640
+      Height = 371
+      TabOrder = 2
+      Visible = False
+      object Label8: TLabel
+        Left = 14
+        Top = 56
+        Width = 34
+        Height = 15
+        Caption = 'E-Mail'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label9: TLabel
+        Left = 14
+        Top = 18
+        Width = 593
+        Height = 15
+        Alignment = taCenter
+        Caption = 
+          'Caso o endere'#231'o de e-mail informado abaixo esteja associado a um' +
+          'a conta, os detalhes para recupera'#231#227'o da '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 22
+        Top = 29
+        Width = 227
+        Height = 15
+        Caption = 'conta ser'#225' enviado no correio eletr'#244'nico.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label11: TLabel
+        Left = 208
+        Top = 166
+        Width = 188
+        Height = 15
+        Caption = 'AINDA N'#195'O EST'#193' FUNCIONANDO'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Edit3: TEdit
+        Left = 14
+        Top = 71
+        Width = 528
+        Height = 23
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        Text = 'Edit3'
+        TextHint = '--@--.com'
+      end
+      object Button6: TButton
+        Left = 548
+        Top = 71
+        Width = 75
+        Height = 23
+        Hint = 'Enviar senha no e-mail'
+        Caption = 'Enviar'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+        OnClick = Button6Click
+      end
+    end
     object Panel2: TPanel
       Left = 7
       Top = 6
-      Width = 506
+      Width = 640
       Height = 371
       TabOrder = 0
       Visible = False
       object DBGrid1: TDBGrid
         Left = 0
         Top = 0
-        Width = 505
+        Width = 640
         Height = 369
         DataSource = DataSource1
         DrawingStyle = gdsGradient
@@ -574,18 +572,18 @@ object Form1: TForm1
       'User_Name=postgres'
       'Password=EC8d@731ca'
       'DriverID=PG')
-    Left = 23
-    Top = 383
+    Left = 15
+    Top = 399
   end
   object FDQuery1: TFDQuery
     Connection = FDConnection1
-    Left = 151
-    Top = 383
+    Left = 47
+    Top = 399
   end
   object DataSource1: TDataSource
     DataSet = FDQuery2
-    Left = 55
-    Top = 383
+    Left = 335
+    Top = 399
   end
   object FDQuery2: TFDQuery
     Connection = FDConnection1
@@ -601,54 +599,54 @@ object Form1: TForm1
       '         '#39'WHERE users.user = '#39#39#39' + txtUsuario.Text + '#39#39#39' '#39' +'
       '         '#39'AND users.password = '#39#39#39' + txtSenha.Text + '#39#39#39' '#39' +'
       '         '#39'ORDER BY users.id_user ASC'#39';')
-    Left = 183
-    Top = 383
+    Left = 79
+    Top = 399
   end
   object FDQuery3: TFDQuery
     Connection = FDConnection1
     SQL.Strings = (
       '')
-    Left = 215
-    Top = 383
+    Left = 111
+    Top = 399
   end
   object DataSource2: TDataSource
     DataSet = FDQuery3
-    Left = 87
-    Top = 383
+    Left = 367
+    Top = 399
   end
   object FDQuery4: TFDQuery
     Connection = FDConnection1
-    Left = 247
-    Top = 383
+    Left = 143
+    Top = 399
   end
   object DataSource3: TDataSource
     DataSet = FDQuery4
-    Left = 119
-    Top = 383
+    Left = 399
+    Top = 399
   end
   object FDQuery5: TFDQuery
     Connection = FDConnection1
-    Left = 279
-    Top = 383
+    Left = 175
+    Top = 399
   end
   object FDQuery6: TFDQuery
     Connection = FDConnection1
-    Left = 311
-    Top = 383
+    Left = 207
+    Top = 399
   end
   object FDQuery7: TFDQuery
     Connection = FDConnection1
-    Left = 343
-    Top = 383
+    Left = 239
+    Top = 399
   end
   object FDQuery8: TFDQuery
     Connection = FDConnection1
-    Left = 375
-    Top = 383
+    Left = 271
+    Top = 399
   end
   object FDQuery9: TFDQuery
     Connection = FDConnection1
-    Left = 407
-    Top = 383
+    Left = 303
+    Top = 399
   end
 end
