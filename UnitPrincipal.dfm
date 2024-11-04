@@ -118,91 +118,6 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
-    object Panel4: TPanel
-      Left = 7
-      Top = 6
-      Width = 640
-      Height = 371
-      TabOrder = 2
-      Visible = False
-      object Label8: TLabel
-        Left = 14
-        Top = 56
-        Width = 34
-        Height = 15
-        Caption = 'E-Mail'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Label9: TLabel
-        Left = 14
-        Top = 18
-        Width = 609
-        Height = 15
-        Alignment = taCenter
-        Caption = 
-          'Caso o endere'#231'o de e-mail informado abaixo esteja associado a um' +
-          'a conta, os detalhes para recupera'#231#227'o da '
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Label10: TLabel
-        Left = 22
-        Top = 29
-        Width = 599
-        Height = 15
-        Caption = 'conta ser'#225' enviado no correio eletr'#244'nico.'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object Edit3: TEdit
-        Left = 14
-        Top = 71
-        Width = 528
-        Height = 23
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-        ParentShowHint = False
-        ShowHint = True
-        TabOrder = 0
-        Text = 'Edit3'
-        TextHint = '--@--.com'
-      end
-      object Button6: TButton
-        Left = 548
-        Top = 71
-        Width = 75
-        Height = 23
-        Hint = 'Enviar senha no e-mail'
-        Caption = 'Enviar'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Segoe UI'
-        Font.Style = [fsBold]
-        ParentFont = False
-        ParentShowHint = False
-        ShowHint = True
-        TabOrder = 1
-        OnClick = Button6Click
-      end
-    end
     object Panel2: TPanel
       Left = 7
       Top = 6
@@ -552,12 +467,109 @@ object Form1: TForm1
         OnClick = Button5Click
       end
     end
+    object Panel4: TPanel
+      Left = 7
+      Top = 6
+      Width = 640
+      Height = 371
+      TabOrder = 2
+      Visible = False
+      object Label8: TLabel
+        Left = 14
+        Top = 56
+        Width = 34
+        Height = 15
+        Caption = 'E-Mail'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label9: TLabel
+        Left = 14
+        Top = 18
+        Width = 609
+        Height = 15
+        Alignment = taCenter
+        Caption = 
+          'Caso o endere'#231'o de e-mail informado abaixo esteja associado a um' +
+          'a conta, os detalhes para recupera'#231#227'o da '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 22
+        Top = 29
+        Width = 599
+        Height = 15
+        Caption = 'conta ser'#225' enviado no correio eletr'#244'nico.'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label11: TLabel
+        Left = 208
+        Top = 166
+        Width = 188
+        Height = 15
+        Caption = 'AINDA N'#195'O EST'#193' FUNCIONANDO'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Edit3: TEdit
+        Left = 14
+        Top = 71
+        Width = 528
+        Height = 23
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 0
+        Text = 'Edit3'
+        TextHint = '--@--.com'
+      end
+      object Button6: TButton
+        Left = 548
+        Top = 71
+        Width = 75
+        Height = 23
+        Hint = 'Enviar senha no e-mail'
+        Caption = 'Enviar'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+        OnClick = Button6Click
+      end
+    end
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
       'Database=learningDelphi'
       'User_Name=postgres'
-      'Password=EC8d@731ca'
       'DriverID=PG')
     Left = 15
     Top = 399
@@ -630,41 +642,6 @@ object Form1: TForm1
     Connection = FDConnection1
     Left = 271
     Top = 399
-  end
-  object IdSMTP1: TIdSMTP
-    Host = 'smtp.gmail.com'
-    Password = 'ibdtyjbwhfrdfljd'
-    Port = 587
-    SASLMechanisms = <>
-    Username = 'dev.joao.quaresma@gmail.com'
-    Left = 231
-    Top = 175
-  end
-  object IdMessage1: TIdMessage
-    AttachmentEncoding = 'MIME'
-    BccList = <>
-    CCList = <>
-    Encoding = meDefault
-    FromList = <
-      item
-      end>
-    Recipients = <>
-    ReplyTo = <>
-    ConvertPreamble = True
-    Left = 263
-    Top = 175
-  end
-  object IdSSLIOHandlerSocketOpenSSL1: TIdSSLIOHandlerSocketOpenSSL
-    Destination = 'smtp.gmail.com'
-    Host = 'smtp.gmail.com'
-    MaxLineAction = maException
-    Port = 0
-    DefaultPort = 0
-    SSLOptions.Mode = sslmUnassigned
-    SSLOptions.VerifyMode = []
-    SSLOptions.VerifyDepth = 0
-    Left = 295
-    Top = 175
   end
   object FDQuery9: TFDQuery
     Connection = FDConnection1

@@ -60,9 +60,6 @@ type
     FDQuery6: TFDQuery;
     FDQuery7: TFDQuery;
     FDQuery8: TFDQuery;
-    IdSMTP1: TIdSMTP;
-    IdMessage1: TIdMessage;
-    IdSSLIOHandlerSocketOpenSSL1: TIdSSLIOHandlerSocketOpenSSL;
     Edit3: TEdit;
     Label8: TLabel;
     Button6: TButton;
@@ -70,6 +67,7 @@ type
     Label10: TLabel;
     FDQuery9: TFDQuery;
     Edit1: TEdit;
+    Label11: TLabel;
     procedure btnEntrarClick(Sender: TObject);
     procedure btnNovoAcessoClick(Sender: TObject);
     procedure btnRecuperarClick(Sender: TObject);
@@ -105,11 +103,8 @@ var
       begin
         if Panel.Controls[I] is TEdit then
           TEdit(Panel.Controls[I]).Text := '' // Limpa o texto dos Edit
-        else if Panel.Controls[I] is TMemo then
-          TMemo(Panel.Controls[I]).Lines.Clear // Limpa o conteúdo dos Memo
         else if Panel.Controls[I] is TComboBox then
           TComboBox(Panel.Controls[I]).ItemIndex := -1; // Reseta a seleção do ComboBox
-        // Adicione mais condições conforme necessário para outros componentes
       end;
   end;
 
@@ -278,7 +273,6 @@ begin
           btnNovoAcesso.Caption := 'Criar';
           btnRecuperar.Caption := 'Recuperar';
           btnNovoAcesso.Hint := 'Criar novo usuário';
-
         end;
   end
 
@@ -302,7 +296,6 @@ begin
       btnEntrar.Caption := 'Entrar';
       btnNovoAcesso.Caption := 'Criar';
     end;
-
 end;
 
 // ------------------------------ btnRecuperar -------------------------------
@@ -650,32 +643,20 @@ begin
       FDQuery9.SQL.Text := query9;
       FDQuery9.Open;
 
-      if FDQuery9.Fields[0].AsString <> '' then
-        begin
-          IdSMTP1.Host := 'smtp.gmail.com'; // your SMTP server
-          IdSMTP1.Port := 587; // port for TLS
-          IdSMTP1.Username := 'dev.joao.quaresma@gmail.com'; // your email
-          IdSMTP1.Password := 'ibdtyjbwhfrdfljd'; // your email password
-          IdSMTP1.UseTLS := utUseExplicitTLS; // for TLS
+      {if FDQuery9.Fields[0].AsString <> '' then
+              begin
+                        IdSMTP1.Host := 'smtp.gmail.com'; // your SMTP server
+                                  IdSMTP1.Port := 587; // port for TLS          IdSMTP1.Username := 'dev.joao.quaresma@gmail.com'; // your email          IdSMTP1.Password := 'ibdtyjbwhfrdfljd'; // your email password          IdSMTP1.UseTLS := utUseExplicitTLS; // for TLS
 
-          IdMessage1.Recipients.EMailAddresses := Edit5.Text; // recipient email
-          IdMessage1.From.Address := 'dev.joao.quaresma@gmail.com'; // sender email
-          IdMessage1.From.Name := 'Controle de Usuários'; // sender name
-          IdMessage1.Subject := 'Recuperação de Conta'; // email subject
-          IdMessage1.Body.Text := 'Olá, mundo!'; // email body
+                                            IdMessage1.Recipients.EMailAddresses := Edit5.Text; // recipient email
+                                                      IdMessage1.From.Address := 'dev.joao.quaresma@gmail.com'; // sender email          IdMessage1.From.Name := 'Controle de Usuários'; // sender name          IdMessage1.Subject := 'Recuperação de Conta'; // email subject          IdMessage1.Body.Text := 'Olá, mundo!'; // email body
 
-          IdSMTP1.Connect;
-          try
-            IdSMTP1.Send(IdMessage1);
-            ShowMessage('Email enviado!');
-          finally
-            IdSMTP1.Disconnect;
-          end;
-        end
-      else
-        begin
-          ShowMessage('Não há contas com esse endereço de e-mail cadastrado');
-        end;
+                                                                IdSMTP1.Connect;
+                                                                          try            IdSMTP1.Send(IdMessage1);            ShowMessage('Email enviado!');          finally            IdSMTP1.Disconnect;          end;        end
+                                                                                else
+                                                                                        begin
+                                                                                                  ShowMessage('Não há contas com esse endereço de e-mail cadastrado');
+                                                                                                          end;}
     end;
 end;
 
