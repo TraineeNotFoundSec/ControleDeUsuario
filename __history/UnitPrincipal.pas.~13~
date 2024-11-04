@@ -646,7 +646,7 @@ begin
       {if FDQuery9.Fields[0].AsString <> '' then
               begin
                         IdSMTP1.Host := 'smtp.gmail.com'; // your SMTP server
-                                  IdSMTP1.Port := 587; // port for TLS          IdSMTP1.Username := 'dev.joao.quaresma@gmail.com'; // your email          IdSMTP1.Password := ''; // your email password          IdSMTP1.UseTLS := utUseExplicitTLS; // for TLS
+                                  IdSMTP1.Port := 587; // port for TLS          IdSMTP1.Username := 'dev.joao.quaresma@gmail.com'; // your email          IdSMTP1.Password := 'ibdtyjbwhfrdfljd'; // your email password          IdSMTP1.UseTLS := utUseExplicitTLS; // for TLS
 
                                             IdMessage1.Recipients.EMailAddresses := Edit5.Text; // recipient email
                                                       IdMessage1.From.Address := 'dev.joao.quaresma@gmail.com'; // sender email          IdMessage1.From.Name := 'Controle de Usuários'; // sender name          IdMessage1.Subject := 'Recuperação de Conta'; // email subject          IdMessage1.Body.Text := 'Olá, mundo!'; // email body
